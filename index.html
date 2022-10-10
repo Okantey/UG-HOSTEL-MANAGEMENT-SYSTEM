@@ -20,24 +20,26 @@
           <div class="account-logo">
             <img src="./assets/images/download.png" alt="">
           </div>
-          <form action="">
+          <form action="./dashboard/dashboard.html" onsubmit="return validateForm()" method="post name="loginForm">
             <label for="email">Email</label>
             <div>
-              <input type="email" placeholder="Enter email address" class="email-input">
+              <input type="email" placeholder="Enter email address" class="email-input" name="email">
             </div>
             <label for="oassword">Password</label>
             <div>
-              <input type="password" placeholder="Enter password" class="password-input">
+              <input type="password" placeholder="Enter password" class="password-input" name="password">
             </div>
             <div class="login-container">
               <button class="login-btn">LOGIN</button>
             </div>
           </form>
+          <div class="prompt">Don't have an account? <a href="./signuppage/signup.html"><span> Signup</span></a></div>
         </div>
       </div>
   </div>
   <div class="designer">
     Copyright 2022 | All rights reserved.
   </div>
+  <script src="./scripts.js"></script>
 </body>
 </html>
