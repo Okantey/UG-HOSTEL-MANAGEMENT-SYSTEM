@@ -8,4 +8,101 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #00357A;
 }
+
+.header-text {
+  text-align: center;
+  padding-block: .5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #00357A;
+  background-color: #FFBF0F;
+  text-shadow: transparent;
+  -webkit-box-shadow: 0 0 20px #FFBF0F;
+  box-shadow: 0 0 20px #FFBF0F;
+}
+.welcome, .account-logo{
+  text-align: center;
+  color: #00357A;
+  font-weight: 700;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+.background-img{
+  width: 100%;
+
+}
+.sub-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  -webkit-box-shadow: 0 0 10px #FFBF0F;
+        box-shadow: 0 0 10px #FFBF0F;
+ padding-inline: 2.5rem;
+ padding-block: 1.25rem;
+ background-color: #FFBF0F;
+ margin-top: 1.25rem;
+ border-radius: .2rem;
+ width: 40%;
+}
+.sub-content > *{
+  width: 100%;
+}
+.account-logo img {
+  width: 8rem;
+  border-radius: .5rem;
+}
+.login-container {
+  margin-top: 1rem;
+}
+.login-btn {
+  width: 100%;
+  padding-block: 1rem;
+  border: 1px solid #00357A;
+  background-color: #00357A;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: .2rem;
+  font-size: 1rem;
+}
+.email-input, .password-input {
+  padding-block: .8rem;
+  width: 100%;
+  border-radius: .2rem;
+  border-color: #CBCCFF;
+}
+.email-input {
+  margin-bottom: 1rem;
+}
+label::after {
+  content: "*";
+  color: red;
+  padding-inline: .2rem;
+}
+
+@media (max-width: 1000px) and (min-width:200px) {
+  .header-text {
+    font-size: 1.2rem;
+  }
+  .sub-content {
+    width: 80%;
+    margin-top: 2.5rem;
+  }
+  .account-logo img {
+    width: 5rem;
+  }
+}
+.designer {
+  text-align: center;
+  margin-top: 1rem;
+  color: #CBCCFF;
+  font-weight: 700;
+}
+
+
