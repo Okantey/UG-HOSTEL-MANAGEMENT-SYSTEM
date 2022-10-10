@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="records.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
   <header class="top-nav">
     <div class="logo-section">
       <img src="../assets/images/download.png" alt="logo-section">
-      <a href="" style="text-decoration:none;">UNIVERSITY OF GHANA</a> 
+      UNIVERSITY OF GHANA
     </div>
     <div class="header">
       DASHBOARD
@@ -30,21 +30,28 @@
     </div>
   </header>
   <div class="background">
-      <div class="header-text">SELECT AN OPTION TO GET STARTED</div>
+      <div class="header-text">STUDENT RECORDS</div>
       <div class="content">
         <div class="sub-content">
-          <div class="staff-records">
-            <button>STAFF RECORDS</button>
-          </div>
-          <div class="student-records">
-            <a href="../dashboard/records.html"><button>STUDENT RECORDS</button></a>
-          </div>
-          <div class="biometric-logs">
-            <button>BIOMETRIC LOGS</button>
-          </div>
-          <div class="settings">
-            <button>SETTINGS</button>
-          </div>
+          <form action="" name="biometrics">
+            <label for="stu-name">Student name</label>
+            <div>
+              <input type="text" class="student-name" placeholder="Enter student name">
+            </div>
+            <label for="stu-id">Student ID</label>
+            <div>
+              <input type="number" class="student-id" placeholder="Enter student id" required>
+            </div>
+            <div class="prompt">CAPTURE BIOMETRICS</div>
+            <div class="biometrics"></div>
+            <div class="biometrics-prompt"></div>
+            <div>
+              <input type="file" name="" id="">
+            </div>
+            <div class="save-btn-container">
+              <button class="save-btn">SAVE & UPDATE</button>
+            </div>
+          </form>
         </div>
       </div>
     

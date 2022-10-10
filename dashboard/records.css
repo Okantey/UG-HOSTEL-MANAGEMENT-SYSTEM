@@ -6,6 +6,7 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #00357A;
 }
 .top-nav {
   display: flex;
@@ -23,10 +24,6 @@ body {
   display: flex;
   align-items: center;
   gap: .5rem;
-
-}
-.logo-section a {
-  color: #ffffff;
 }
 .logo-section img {
   width: 2rem;
@@ -44,9 +41,7 @@ body {
   background-color: #FFBF0F;
   text-shadow: transparent;
 }
-.background {
-  background-color: #CBCCFF;
-}
+
 .content {
   margin-top: 2rem;
   display: flex;
@@ -57,7 +52,6 @@ body {
   width: 70%;
   margin: 0 auto;
   padding-block: 1rem;
-  background-color: #EBEEFF;
 }
 .sub-content {
   display: flex;
@@ -65,27 +59,64 @@ body {
   align-items: center;
   gap: 2rem;
   border: 1px solid #00357A;
- 
+  padding: 2rem;
+  width: 60%;
+  background-color: #00357A;
 }
 .sub-content > *{
   width: 100%;
-
 }
-.sub-content > * button {
+form > * {
+  margin-bottom: 1rem;
+}
+.student-name, .student-id {
   width: 100%;
-  background-color: #00357A;
+  padding-block: .8rem;
+  border-radius: .2rem;
+  border-color: #FFBF0F;
+}
+label {
   color: #FFBF0F;
-  border: 1px solid #00357A;
-  font-weight: 600;
-  font-size: 1.5rem;
+  font-weight: 700;
+}
+label::after {
+  content: "*";
+  color: red;
+  margin-left: .5rem;
+}
+.biometrics, .biometrics-prompt {
+  display: inline-block;
+  width: 12rem;
+  height: 10rem;
+  background-color: #ffffff;
+}
+.prompt {
+  text-align: center;
+  color: #FFBF0F;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.biometrics {
+  margin-right: 2rem;
+}
+.save-btn-container {
+  text-align: center;
+}
+.save-btn {
+  background-color: #FFBF0F;
+  padding-block: .8rem;
   padding-inline: 5rem;
-  padding-block: 2rem;
+  color: #00357A;
   font-family: 'Poppins', sans-serif;
+  border: 1px solid #FFBF0F;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: .2rem;
+  
+}
+.save-btn:hover {
+  -webkit-box-shadow: 0 0 10px #FFBF0F;
+  box-shadow: 0 0 10px #FFBF0F;
+  transition: 200ms ease-out;
   cursor: pointer;
 }
-.sub-content > * button:hover {
-  background-color: #FFBF0F;
-  color: #00357A;
-  transition: 200ms ease-in-out;
-}
-
