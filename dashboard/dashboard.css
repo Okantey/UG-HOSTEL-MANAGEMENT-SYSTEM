@@ -1,0 +1,80 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 5%;
+  padding-block: .5rem;
+  background-color: #00357A;
+  color: #ffffff;
+  font-weight: 700;
+
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.logo-section img {
+  width: 2rem;
+  border-radius: .2rem;
+}
+.profile-section {
+  padding: .2rem;
+}
+.header-text {
+  text-align: center;
+  padding-block: .5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #00357A;
+  background-color: #FFBF0F;
+  text-shadow: transparent;
+}
+.background {
+  background-color: #CBCCFF;
+}
+.content {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #FFBF0F;
+  -webkit-box-shadow: 0 0 10px #00357A;
+        box-shadow: 0 0 10px #FFBF0F;
+  width: 70%;
+  margin: 0 auto;
+  padding-block: 1rem;
+  background-color: #EBEEFF;
+}
+.sub-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  border: 1px solid #00357A;
+ 
+}
+.sub-content > *{
+  width: 100%;
+}
+.sub-content > * button {
+  width: 100%;
+  background-color: #00357A;
+  color: #FFBF0F;
+  border: 1px solid #00357A;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding-inline: 5rem;
+  padding-block: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
