@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap" rel="stylesheet">
@@ -16,28 +16,35 @@
       <div class="header-text">ELECTRONIC HOSTEL MANAGEMENT SYSTEM ( UG )</div>
       <div class="content">
         <div class="sub-content">
-          <!-- <div class="welcome">WELCOME BACK!</div> -->
           <div class="account-logo">
-            <img src="./assets/images/download.png" alt="">
+            <img src="../assets/images/download.png" alt="">
           </div>
           <form action="">
+            <label for="email">Username</label>
+            <div>
+              <input type="text" placeholder="Enter Username" class="email-input" required>
+            </div>
             <label for="email">Email</label>
             <div>
-              <input type="email" placeholder="Enter email address" class="email-input">
+              <input type="email" placeholder="Enter email address" class="email-input" required>
             </div>
-            <label for="oassword">Password</label>
+            <label for="password">Password</label>
             <div>
-              <input type="password" placeholder="Enter password" class="password-input">
+              <input type="password" placeholder="Enter password" class="password-input" required>
+            </div>
+            <label for="password">Confirm Password</label>
+            <div>
+              <input type="password" placeholder="Repeat password" class="password-input" required>
             </div>
             <div class="login-container">
-              <button class="login-btn">LOGIN</button>
+              <button class="login-btn">Create new account</button>
             </div>
           </form>
         </div>
       </div>
   </div>
   <div class="designer">
-    Copyright 2022 | All rights reserved.
+    &#169; Copyright 2022 | All rights reserved.
   </div>
 </body>
 </html>

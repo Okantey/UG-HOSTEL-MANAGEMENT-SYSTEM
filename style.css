@@ -70,6 +70,14 @@ body {
   font-weight: 700;
   border-radius: .2rem;
   font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  
+}
+.login-btn:hover {
+  -webkit-box-shadow: 0 0 10px #00357A;
+  box-shadow: 0 0 10px #00357A;
+  transition: 200ms ease-out;
+  cursor: pointer;
 }
 .email-input, .password-input {
   padding-block: .8rem;
@@ -77,7 +85,8 @@ body {
   border-radius: .2rem;
   border-color: #CBCCFF;
 }
-.email-input {
+
+.email-input,.password-input {
   margin-bottom: 1rem;
 }
 label::after {
